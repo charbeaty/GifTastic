@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="us-en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Gif Tastic</title>    
+    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barriecito|Dosis|Ultra|Unlock&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="magic">Gif Magic!</h1>
+            <p class="explain">Love animals? Me too! Put your favorite
+                animal in the box provided, click 'submit' and watch 
+                the magic happen!</p>
+    </div>
+    <!-- Buttons for animals will go here -->
+    <div id="add-buttons"></div>
+
+    <form id="animal-form">
+        <label id="provided" for="animal-input">The box that has been provided!</label>
+        <input type="text" id="animal-input"><br>
+
+        <!-- Button to add gifs to screen -->
+        <input id="add-animal" type="submit" value="Submit">
+    </form>
+</div>
+    <script type="text/javascript" src="javascript/gif.js"></script>
+</body>
+</html>
