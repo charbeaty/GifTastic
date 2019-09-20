@@ -11,7 +11,7 @@ var topics = ["Dog", "Cat", "Porcupine", "Giraffe", "Hippopotamus"];
 //topics in array should be made into buttons on HTML
 //use a loop that appends for each string in the array
 function showButtons() {
-    $("add-buttons").empty();
+    $("#add-buttons").empty();
 
     for(var i = 0; i < topics.length; i++) {
         var b = $("<button>");
