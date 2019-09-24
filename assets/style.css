@@ -1,5 +1,9 @@
-body {
-    
+body, html {
+background-image: url("https://theawesomedaily.com/wp-content/uploads/2018/07/cool-backgrounds-feat-1-620x350.jpg");    
+height: 750px; /* You must set a specified height */
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover;
 }
 
 h1 
@@ -10,5 +14,18 @@ h1
 p, #provided,#add-animal
 {
     font-family: 'Ultra', serif;
+}
+
+.animals {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Unlock', cursive;
+    margin: 5px;
 }
 
