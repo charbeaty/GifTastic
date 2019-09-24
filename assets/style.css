@@ -4,6 +4,7 @@ height: 750px; /* You must set a specified height */
 background-position: center; /* Center the image */
 background-repeat: no-repeat; /* Do not repeat the image */
 background-size: cover;
+background-attachment: fixed;
 }
 
 h1 
@@ -17,9 +18,9 @@ p, #provided,#add-animal
 }
 
 .animals {
-    background-color: black;
+    background-color: white;
     border: none;
-    color: white;
+    color: purple;
     padding: 10px 25px;
     text-align: center;
     text-decoration: none;

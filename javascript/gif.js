@@ -1,6 +1,6 @@
 
 
-var topics = [];
+var animals = [];
 
 $("#add-buttons").on("click", "button", function() {
 
@@ -40,15 +40,15 @@ function showButtons() {
     $("#add-buttons").empty();
 
     //loops through array of movies
-    for (var i = 0; i < topics.length; i++) {
+    for (var i = 0; i < animals.length; i++) {
         //adding button element to html
         var b = $("<button>");
         //adding a class to html
         b.addClass("animals");
-        //adding a data-attribute for value of topics at the index i
-        b.attr("data-input", topics[i]);
+        //adding a data-attribute for value of animals at the index i
+        b.attr("data-input", animals[i]);
         //adds text to button that was just added
-        b.text(topics[i]);
+        b.text(animals[i]);
         //adds the buttons to html
 
        
@@ -64,7 +64,7 @@ $("#add-animal").on("click", function (event) {
     //takes value from input box
     var input = $("#animal-input").val().trim();
     //the input from the textbox is added to array
-    topics.push(input);
+    animals.push(input);
     //calling the function that handles the array
     showButtons();
 });
