@@ -16,6 +16,9 @@ $("#add-buttons").on("click", "button", function() {
         console.log(queryURL);
 
         console.log(response);
+
+        var gifDiv = $("<div class='gif'>");
+
         var results = response.data;
 
         for (var i = 0; i < results.length; i++) {
@@ -27,8 +30,10 @@ $("#add-buttons").on("click", "button", function() {
 
             gifImage.attr("src", results[i].images.fixed_height.url);
 
-            $("#gifs-view").append(pElement);
-            $("#gifs-view").append(gifImage);
+            gifDiv.append(pElement);
+            gifDiv.append(gifImage);
+
+            $("#gifs-view").prepend(gifDiv);
 
         }
 
