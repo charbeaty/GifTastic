@@ -42,11 +42,8 @@ $("#add-buttons").on("click", "button", function () {
 
             }
             $(".image").on("click", function () {
-                // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
                 var state = $(this).attr("data-state");
-                // If the clicked image's state is still, update its src attribute to what its data-animate value is.
-                // Then, set the image's data-state to animate
-                // Else set src to the data-still value
+               
                 if (state === "still") {
                     $(this).attr("src", $(this).attr("data-animate"));
                     $(this).attr("data-state", "animate");
@@ -79,7 +76,6 @@ function showButtons() {
         $("#add-buttons").append(b);  //append adds to what is already on the page
     }                                 //it does not replace!
 }
-//***********STEP THREE*************/
 
 
 $("#add-animal").on("click", function (event) {
@@ -94,15 +90,5 @@ $("#add-animal").on("click", function (event) {
 });
 
 
-//***********STEP FOUR*************/
-
-//When user clicks on gif it should animate
-//If user clicks on gif again it should stop playing
-
-//***********STEP FIVE*************/
-
-//Dispaly gifRating under every gif
-
-//**********STOP! MAKE SURE IMAGES DISPLAY WHEN BUTTONS ARE PRESSED */
 
 
